@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:minWidth="300.0dip"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="25.0dip" >
+     <TextView  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Ringer Volume"  
+        android:textColor="#ffffffff"/>
+    <com.b16h22.statusbar.RingerVolumeSlider
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  />
+    <TextView  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="System Volume"  
+        android:textColor="#ffffffff"/>    
+    <com.b16h22.statusbar.SystemVolumeSlider
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification Volume"  
+        android:textColor="#ffffffff"/>    
+    <com.b16h22.statusbar.NotificationVolumeSlider
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Media Volume"  
+        android:textColor="#ffffffff"/>    
+    <com.b16h22.statusbar.MediaVolumeSlider       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />    
+
+</LinearLayout>

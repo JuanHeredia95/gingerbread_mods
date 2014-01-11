@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.b16h22.statusbar"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme" >
+        <activity
+            android:name="com.b16h22.statusbar.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.WifiToggle"
+            android:label="@string/title_activity_digital_clock" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.SettingsShortcut"
+            android:label="@string/title_activity_settings_shortcut" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.DateTime"
+            android:label="@string/title_activity_date_time" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.Battery"
+            android:label="@string/title_activity_battery" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.MessageNew"
+            android:label="@string/title_activity_message_new" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.QuickSettingsFlipper"
+            android:label="@string/title_activity_photo_picker" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.Receiver"
+            android:label="@string/title_activity_receiver" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.Clock"
+            android:label="@string/title_activity_clock" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.Pulldown"
+            android:label="@string/title_activity_pulldown" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.Dummy"
+            android:label="@string/title_activity_dummy" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.DatePanel"
+            android:label="@string/title_activity_date_panel" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.BrightnessSlider"
+            android:label="@string/title_activity_brightness_slider" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.StatusBar"
+            android:label="@string/title_activity_status_bar" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.ProfilePicture"
+            android:label="@string/title_activity_profile_picture" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.ProfileName"
+            android:label="@string/title_activity_pofile_name" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.SwipeDetector"
+            android:label="@string/title_activity_swipe_detector" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.SwipeScrollView"
+            android:label="@string/title_activity_swipe_scroll_view" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.TypeFace"
+            android:label="@string/title_activity_type_face" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.Date"
+            android:label="@string/title_activity_date" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.Day"
+            android:label="@string/title_activity_day" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.ShortcutBackground"
+            android:label="@string/title_activity_shortcut_background" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.StatusBarService"
+            android:label="@string/title_activity_status_bar_service" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.BrightnessSettings"
+            android:label="@string/title_activity_brightness_settings" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.BirghtnessSettings"
+            android:label="@string/title_activity_birghtness_settings" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.UserInterfaceSettings"
+            android:label="@string/title_activity_user_interface_settings" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.ToggleText"
+            android:label="@string/title_activity_toggle_text" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.BatteryQuickSettings"
+            android:label="@string/title_activity_battery_quick_settings" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.Signal"
+            android:label="@string/title_activity_wifi" >
+        </activity>
+        <activity
+            android:name="com.b16h22.statusbar.Search"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:theme="@style/Theme.Transparent"
+            android:name="com.b16h22.statusbar.VolumeSliders"
+            android:label="@string/title_activity_volume_sliders" >
+        </activity>
+    </application>
+
+</manifest>

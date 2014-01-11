@@ -1,0 +1,360 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical" >
+<com.b16h22.statusbar.Expander android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />  
+<com.b16h22.statusbar.MusicControls android:layout_width="fill_parent"
+        android:layout_height="50.0dip" android:background="#ff0099bc" />             
+<com.b16h22.statusbar.ExpandedBackground
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:scaleType="centerCrop" />     
+<com.b16h22.statusbar.TrackingView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true" />    
+<com.b16h22.statusbar.StatusBar android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="21.0dip"
+    android:id="@+id/status_bar" />     
+ <com.b16h22.statusbar.TabView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+         android:weightSum="4.0"
+         android:orientation="horizontal" />  
+<com.b16h22.statusbar.FourPanelSwitcher android:id="@+id/fourpanelflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip" > 
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#ff33b5e5" />  
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#ff0099bc" /> 
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#ffffffff" /> 
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#ff556862" />       
+</com.b16h22.statusbar.FourPanelSwitcher>
+<com.b16h22.statusbar.BatteryPercentage
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" />               
+<com.b16h22.statusbar.StatusBarBattery
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" />      
+        <com.b16h22.statusbar.VolumeToggle
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />     
+        <com.b16h22.statusbar.QuickPanelButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/qp_button" />     
+<com.b16h22.statusbar.TrackingExpanded
+        android:layout_width="fill_parent"
+        android:layout_height="30.0px"
+        android:id="@+id/tracking_expanded" />     
+<com.b16h22.statusbar.ScrollPanel
+        android:layout_width="fill_parent"
+        android:layout_height="30.0px"
+        android:id="@+id/scroll_panel" />        
+<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30.0px" >
+    <com.b16h22.statusbar.ClockHolo      
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/clock"
+        android:layout_alignParentLeft="true"
+        android:baselineAligned="true" /> 
+    <com.b16h22.statusbar.Day
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dayView"
+        android:layout_toRightOf="@+id/clock"
+        android:layout_marginTop="7.0dip"
+        android:layout_marginLeft="5.0dip" />        
+    <com.b16h22.statusbar.Date
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateView"
+        android:layout_alignParentBottom="true"        
+        android:layout_below="@+id/dayView"
+        android:layout_toRightOf="@+id/clock" 
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="-6.0dip"/>
+        </RelativeLayout>    
+    <com.b16h22.statusbar.BatteryQuickSettings       
+        android:layout_width="40.0px"
+        android:layout_height="40.0px"
+        android:orientation="vertical" />      
+    <LinearLayout 
+        android:layout_width="60.0px"
+        android:layout_height="60.0px">        
+      <com.b16h22.statusbar.WifiSignal       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" /> 
+    </LinearLayout>
+    <com.b16h22.statusbar.Battery       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />                  
+    <com.b16h22.statusbar.AokpToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aokp_toggle_hide" /> 
+    <com.b16h22.statusbar.AokpToggles
+        android:layout_width="fill_parent"
+        android:layout_height="30.0px"
+        android:id="@+id/toggle_aokp"
+        android:background="#ff33b5e5" />            
+    <com.b16h22.statusbar.Settings
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_btn" />
+    <com.b16h22.statusbar.FirstPanel
+        android:layout_width="fill_parent"
+        android:layout_height="30.0px"
+        android:id="@+id/first_panel"
+        android:background="#ff33b5e5" />
+    <com.b16h22.statusbar.Sound
+        android:layout_width="fill_parent"
+        android:layout_height="0.0px"
+        android:id="@+id/sound" />        
+    <com.b16h22.statusbar.SecondPanel
+        android:layout_width="fill_parent"
+        android:layout_height="0.0px"
+        android:id="@+id/clock_panel"
+        android:background="#ff33b5e5" /> 
+    <com.b16h22.statusbar.UsbTether
+        android:layout_width="wrap_content"
+        android:layout_height="0.0px"
+        android:id="@+id/usb_tether" />               
+    <com.b16h22.statusbar.SettingsTab
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_btn" />            
+      <com.b16h22.statusbar.SignalTab       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />                                 
+<com.b16h22.statusbar.Expanded android:layout_width="fill_parent"
+    android:layout_height="0.0dip"
+    android:id="@+id/expanded"
+    android:orientation="vertical" >
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">    
+    <com.b16h22.statusbar.BrightnessSlider       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+             android:background="#cc000000"
+             android:layout_weight="1.0" />
+        </LinearLayout>       
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#cc000000"
+        android:layout_marginTop="3.0dp" />
+             </com.b16h22.statusbar.Expanded>       
+<com.b16h22.statusbar.Tracking android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/tracking" >
+<com.b16h22.statusbar.Pulldown android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/view" /> 
+ <com.b16h22.statusbar.MultiPanelButtons
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+         android:weightSum="3.0"
+         android:orientation="horizontal"
+         android:layout_alignParentTop="true"
+         android:id="@+id/multi" />
+     <com.b16h22.statusbar.HideSlider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/slider_hide"
+        android:layout_below="@+id/multi" />                 
+         <com.b16h22.statusbar.BrightnessSlider       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true" /> 
+        </com.b16h22.statusbar.Tracking>      
+<com.b16h22.statusbar.DatePanel android:layout_width="match_parent"
+    android:layout_height="0.0dip"
+    android:id="@+id/datepanel" /> 
+    <ImageView android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:id="@+id/image" />
+<com.b16h22.statusbar.ProfilePicture android:layout_width="90.0dip"
+    android:layout_height="0.0dip"
+    android:id="@+id/profile"
+    android:scaleType="centerCrop" />
+<com.b16h22.statusbar.ProfileName android:layout_width="fill_parent"
+    android:layout_height="0.0dip"
+    android:id="@+id/profile_name" />
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="0.0dp"
+    android:orientation="horizontal" >
+    <com.b16h22.statusbar.WifiToggle
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings" />
+    <com.b16h22.statusbar.DateTime
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/date" />
+    <com.b16h22.statusbar.SettingsShortcut
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sett" />
+    <com.b16h22.statusbar.MessageNew
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message" /> 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:id="@+id/pickerpage" />   
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="blue" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="dark" /> 
+</LinearLayout>
+<com.b16h22.statusbar.MultiPanelFlipper android:id="@+id/multipanelflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip">
+        <!--adding views to ViewFlipper-->
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="40.0dp"
+    android:orientation="vertical">        
+        <ScrollView  android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        <TextView android:id="@+id/TextView01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="First view is now displayed"
+                        android:textSize="30.0sp" />
+   </ScrollView > 
+           </LinearLayout>
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="40.0dp"
+    android:orientation="vertical">    
+   <ScrollView  android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >   
+        <TextView android:id="@+id/TextView02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Second view is now displayed"
+                        android:textSize="30.0sp" /> 
+
+        </ScrollView >
+        </LinearLayout>        
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="40.0dp"
+    android:orientation="vertical">        
+     <ScrollView  android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >    
+        <TextView android:id="@+id/TextView03"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Third view is now displayed"
+            android:textSize="30.0sp" />
+  </ScrollView>  
+         </LinearLayout>    
+</com.b16h22.statusbar.MultiPanelFlipper>
+    <TextView  
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:text="Ringer Volume"  
+        android:textColor="#ffffffff"/>
+    <com.b16h22.statusbar.RingerVolumeSlider
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"  />
+    <TextView  
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:text="System Volume"  
+        android:textColor="#ffffffff"/>    
+    <com.b16h22.statusbar.SystemVolumeSlider
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip" />
+    <TextView  
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:text="Notification Volume"  
+        android:textColor="#ffffffff"/>    
+    <com.b16h22.statusbar.NotificationVolumeSlider
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip" />
+    <TextView  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Media Volume"  
+        android:textColor="#ffffffff"/>    
+    <com.b16h22.statusbar.MediaVolumeSlider       
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip" />  
+<com.b16h22.statusbar.ShortcutBackground android:layout_width="80.0px"
+    android:layout_height="0.0px"
+    android:id="@+id/shortcut_bg" /> 
+     <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">    
+    <com.b16h22.statusbar.BrightnessSettings
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/brightness" />
+    <com.b16h22.statusbar.SettingsShortcut
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sett" />
+    <com.b16h22.statusbar.UserInterfaceSettings
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ui_settings" />
+     <com.b16h22.statusbar.Search
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/search" /> 
+    <com.b16h22.statusbar.ToggleHide
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggle_hide" /> 
+    <com.b16h22.statusbar.SliderFlipper
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/slider" />                                 
+        </LinearLayout> 
+<com.b16h22.statusbar.Toggles 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggle_layout" >       
+      <com.b16h22.statusbar.ToggleText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggle_text"
+        android:text="SETTINGS" /> 
+</com.b16h22.statusbar.Toggles>   
+<com.b16h22.statusbar.QuickPanelFlipper
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quickpanelflipper" />
+     <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">          
+      <com.b16h22.statusbar.Signal       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" /> 
+      <com.b16h22.statusbar.SignalInText      
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signal_text" />             
+        </LinearLayout>                                       
+</LinearLayout>
